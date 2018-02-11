@@ -1,4 +1,15 @@
+.container {
+	margin-bottom: 30px;
+	max-width: 650px;
+}
+
+
 .thumbnail-img {
 	max-width: 320px;
+	width: 100%;
 	height: auto;
+}
+
+.question {
+	font-size: 20px;
 }

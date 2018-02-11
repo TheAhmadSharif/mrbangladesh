@@ -6754,4 +6754,14 @@ button.close {
     display: none !important;
   }
 }
+
+.custom-control-label::before,.custom-control-label::after {
+	display: none;
+}
+.custom-control-input {
+	opacity: 1;
+	position: relative;
+}
 /*# sourceMappingURL=bootstrap.css.map */
+
+
