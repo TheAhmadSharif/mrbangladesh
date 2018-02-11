@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="shortcut icon" href="assets/images/logonew2.png" /> 
     <link rel="stylesheet" href="assets/bootstrap4/bootstrap4.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/images/logonew2.png" /> 
 
 
     <!--[if IE]>
@@ -19,7 +19,7 @@
       <script src="assets/js/html5shiv@3.7.3.js"></script>
     <![endif]-->
 
-    <script src="assets/js/scripts.js"></script>
+    
   
     <title>Mr. Bangladesh</title>
   </head>
@@ -27,105 +27,150 @@
 
     <div class="container">
 
-      <div id="userInfoSection">
-
-      </div> <!-- End userInfoSection -->
-
-      
 
       <div class="row">
-         <div class="col-md-12 py-5 text-center">
-            <img class="d-block mx-auto mb-4 thumbnail-img" src="assets/images/Mr.Bangladesh game.jpg" alt="Mr Bangladesh">
+            <div class="col-md-12 order-md-1">
+               <form class="needs-validation" novalidate>
 
-          
-            <p class="lead">Mr. Bangladesh Quiz. <br />Get your prize by answering following questions !!! </p>
-          </div> <!-- End 12 -->
-        
-        <div class="col-md-12 order-md-1">
-          <form class="needs-validation" novalidate>
-              <div class="mb-3">
-                <label for="fullName">Your Full Name</label>
-                <input type="text" class="form-control" id="fullName" placeholder="Your Full Name" value="" placeholder="Your Full Name ... " required>
-                <div class="invalid-feedback">
-                  Valid name name is required.
-                </div>
-              </div> <!-- End mb -->
+                   <div id="userInfoSection">
+                         <div class="col-md-12 py-5 text-center">
+                            <!-- <img class="d-block mx-auto mb-4 thumbnail-img" src="assets/images/Mr.Bangladesh game.jpg" alt="Mr Bangladesh"> -->
+                            <p class="lead">Mr. Bangladesh Quiz. <br />Get your prize by answering following questions !!! </p>
+                          </div> <!-- End 12 -->
 
-                  <div class="mb-3">
-                    <label for="email">Your Email Address</label>
-                    <input type="email" class="form-control" id="email" placeholder="you@gmail.com">
-                    <div class="invalid-feedback">
-                      Please enter a valid email address to get updates.
-                    </div>
-                  </div> <!-- End mb -->
+                          <div class="mb-3">
+                            <label for="fullName">Your Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Your Full Name" value="" placeholder="Your Full Name ... " required>
+                            <div class="invalid-feedback">
+                              Valid name name is required.
+                            </div>
+                          </div> <!-- End mb -->
 
-                 
+                          <div class="mb-3">
+                            <label for="email">Your Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@gmail.com">
+                            <div class="invalid-feedback">
+                              Please enter a valid email address to get updates.
+                            </div>
+                          </div> <!-- End mb -->
 
 
-                  <div class="mb-3">
-                    <label for="address">Phone Number</label>
-                    <input type="text" class="form-control" id="address" placeholder="017xxxxxxxx" required>
-                    <div class="invalid-feedback">
-                      Please enter your Phone Number.
-                    </div>
-                  </div> <!-- End mb -->
-
-          
-
-                  <div class="row">
-                    <div class="col-md-12 mb-3">
-                      <label for="district">District</label>
-                      <select class="custom-select d-block w-100" id="district" required>
-                        <option value="">Choose...</option>
-                        <option>Dhaka</option>
-                        <option>Chittagong</option>
-                        <option>Sylhet</option>
-                        <option></option>
-
-                      </select>
-                      <div class="invalid-feedback">
-                        Please select a valid district.
-                      </div>
-                    </div>
-                  </div> <!-- End row -->
+                          <div class="mb-3">
+                            <label for="address">Phone Number</label>
+                            <input type="text" class="form-control" id="address" placeholder="017xxxxxxxx" required>
+                            <div class="invalid-feedback">
+                              Please enter your Phone Number.
+                            </div>
+                          </div> <!-- End mb -->
 
 
-                  <div class="row">
-                    <div class="col-md-12">
-                      <span class="btn btn-primary btn-lg btn-block" type="submit" onclick="startGame()">Start Game</span>
-                    </div> <!-- End Col  -->
-                  </div> <!-- End Row -->
+                          <div class="row">
+                            <div class="col-md-12 mb-3">
+                              <label for="district">District</label>
+                              <select class="custom-select d-block w-100" id="district" required>
+                                <option value="">Choose...</option>
+                                <option>Dhaka</option>
+                                <option>Chittagong</option>
+                                <option>Sylhet</option>
+                                <option></option>
+
+                              </select>
+                              <div class="invalid-feedback">
+                                Please select a valid district.
+                              </div>
+                            </div>
+                          </div> <!-- End row -->
 
 
-                  
-                  
+                          <div class="row">
+                            <div class="col-md-12">
+                              <span class="btn btn-primary btn-lg btn-block" type="submit" onclick="startGame()">Start Game</span>
+                            </div> <!-- End Col  -->
+                          </div> <!-- End Row -->
 
-                  <div class="d-block my-3">
-
-                    <h2 class="question mb-3">
-                            মিস্টার বাংলাদেশ’র নির্মাতা কে? 
-                          </h2>  
+                  </div> <!-- End userInfoSection -->
 
 
-                    <div class="custom-control custom-radio">
-                      <input id="optionA" name="paymentMethod" type="radio" class="custom-control-input" required>
-                      <label class="custom-control-label" for="optionA">তৌকির আহমেদ</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                      <input id="optionB" name="paymentMethod" type="radio" class="custom-control-input" required>
-                      <label class="custom-control-label" for="optionB">খিজির হায়াত খান</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                      <input id="optionC" name="paymentMethod" type="radio" class="custom-control-input" required>
-                      <label class="custom-control-label" for="optionC">আবু আক্তারুল ইমান</label>
-                    </div>
+                    <div id="questionBlock">  
 
-                    <div class="custom-control custom-radio">
-                      <input id="optionD" name="paymentMethod" type="radio" class="custom-control-input" required>
-                      <label class="custom-control-label" for="optionD">নোমান রবিন</label>
-                    </div>
-                    
-                  </div>  <!-- End d-block my-3 -->
+                           <div class="d-block mt-30" id="question0">
+
+                            <h2 class="question mb-3">
+                                    ১) মিস্টার বাংলাদেশ’র নির্মাতা কে? 
+                            </h2>  
+                              <div class="custom-control custom-radio">
+                                <input id="option_1" name="answerA" value="0" type="radio" class="custom-control-input" onchange="goToNextQuestion();" required>
+                                <label class="custom-control-label" for="option_1">তৌকির আহমেদ</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input id="option_2" name="answerA" value="0" type="radio" class="custom-control-input" onchange="goToNextQuestion();" required>
+                                <label class="custom-control-label" for="option_2">খিজির হায়াত খান</label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input id="option_3" name="answerA" value="1" type="radio" class="custom-control-input" onchange="goToNextQuestion();" required>
+                                <label class="custom-control-label" for="option_3">আবু আক্তারুল ইমান</label>
+                              </div>
+
+                              <div class="custom-control custom-radio">
+                                <input id="option_4" name="answerA" value="0" type="radio" class="custom-control-input" onchange="goToNextQuestion();" required>
+                                <label class="custom-control-label" for="option_4">নোমান রবিন</label>
+                              </div>
+                           </div>  <!-- End d-block my-3 -->
+           
+
+
+                            <div class="d-block mt-30" id="question1">
+
+                              <h2 class="question mb-3">
+                                      ২) মূল চরিত্রে খিজির হায়াত খানের এটি কত তম সিনেমা?
+                              </h2>  
+                                <div class="custom-control custom-radio">
+                                  <input id="option_5" name="answerA" value="0" type="radio" class="custom-control-input" onchange="goToNextQuestion();" required>
+                                  <label class="custom-control-label" for="option_5">প্রথম</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                  <input id="option_6" name="answerA" value="1" type="radio" class="custom-control-input" onchange="goToNextQuestion();" required>
+                                  <label class="custom-control-label" for="option_6">দ্বিতীয়</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                  <input id="option_7" name="answerA" value="0" type="radio" class="custom-control-input" onchange="goToNextQuestion();" required>
+                                  <label class="custom-control-label" for="option_7">তৃতীয়</label>
+                                </div>
+
+                                <div class="custom-control custom-radio">
+                                  <input id="option_8" name="answerA" value="0" type="radio" class="custom-control-input" onchange="goToNextQuestion();" required>
+                                  <label class="custom-control-label" for="option_8">চতুর্থ</label>
+                                </div>
+                            </div>  <!-- End d-block my-3 -->
+
+
+                            <div class="d-block mt-30" id="question2">
+
+                              <h2 class="question mb-3">
+                                      ৩) কোন সালে লাক্স সুপারস্টারে ভূষিত হন শানেরায় দেবী শানু?
+                              </h2>  
+                                <div class="custom-control custom-radio">
+                                  <input id="option_9" name="answerA" value="0" type="radio" class="custom-control-input" onchange="goToNextQuestion();" required>
+                                  <label class="custom-control-label" for="option_9">২০০৪</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                  <input id="option_10" name="answerA" value="1" type="radio" class="custom-control-input" onchange="goToNextQuestion();" required>
+                                  <label class="custom-control-label" for="option_10">২০০৫</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                  <input id="option_11" name="answerA" value="0" type="radio" class="custom-control-input" onchange="goToNextQuestion();" required>
+                                  <label class="custom-control-label" for="option_11">২০০৬</label>
+                                </div>
+
+                                <div class="custom-control custom-radio">
+                                  <input id="option_12" name="answerA" value="0" type="radio" class="custom-control-input" onchange="goToNextQuestion();" required>
+                                  <label class="custom-control-label" for="option_12">২০০৭</label>
+                                </div>
+                            </div>  <!-- End d-block my-3 -->
+                      
+                    </div> <!-- End questionBlock -->
+
+
            
             
           </form>
@@ -139,6 +184,7 @@
     <script src="assets/js/jquery.js"></script>
     <script src="assets/bootstrap4/popper.min.js"></script>
     <script src="assets/bootstrap4/bootstrap4.js"></script>
+    <script src="assets/js/scripts.js"></script>
 
    <!--  <script src="assets/js/bootstrap3.min.js"></script> -->
 
