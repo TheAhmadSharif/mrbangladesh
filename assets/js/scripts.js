@@ -17,18 +17,23 @@ function goToNextQuestion () {
 		}
 	}
 
-	if (number < 3 ) {
-		$(radioButtons).closest('.question-block').hide();
-		console.log(number);
+	if (number < 10 ) {
+		$(radioButtons).closest('.question-block').slideUp( "400", function() {
+		 
+		 });
 		showQuestion ();
 	}
 }
 
 
 function showQuestion () {
-	var elem = 'question' + number;
-	if (number < 3) {
-		document.getElementById(elem).style.display = 'block';
+	var elem = '#question' + number;
+	if (number < 10 ) {
+
+		$(elem).slideDown( "400", function() {
+		 
+		 });
+
 		number = number + 1;
 	}
 	
