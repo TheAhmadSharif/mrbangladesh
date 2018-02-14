@@ -7,12 +7,16 @@ function startGame() {
 	
 }
 var number = 0;
+var marks = 0;
 function goToNextQuestion () {
 	var radioButtons = document.getElementsByName("answerA");
 	
 	for (var i = 0; i < radioButtons.length; i++) {
 		if (radioButtons[i].checked) {
 			var selectValue =  radioButtons[i].value;
+			marks = marks + parseInt(selectValue);
+			var totalMarks = marks;
+			console.log(totalMarks);
 			var elementId = event.srcElement.id
 		}
 	}
