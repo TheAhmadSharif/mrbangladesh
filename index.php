@@ -5,8 +5,11 @@
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <meta property="og:image" content="assets/images/mrBD.jpg" />
+    <meta property="og:title" content="Mr. Bangladesh]" />
+    <meta property="og:description" content="Mr. Bangladesh" />
 
 
     <!-- Bootstrap CSS -->
@@ -33,64 +36,110 @@
     <div class="container">
       <div class="row">
             <div class="col-md-12 order-md-1">
-               <form action="success.php" class="needs-validation" accept-charset="utf-8" novalidate method="POST">
-
-						<input type="hidden" name="total_score" id="totalScore">
-
+               <form action="success.php" id="userInfo" accept-charset="utf-8" method="POST">
+						
 
                    <div id="userInfoSection">
                          <div class="col-md-12 text-center">
-                            <img class="d-block mx-auto mb-4 thumbnail-img" src="assets/images/Mr.Bangladesh game.jpg" alt="Mr Bangladesh"> 
-                            <p class="lead">Mr. Bangladesh Quiz. <br />Get your prize by answering following questions !!! </p>
+                            <img rel="assets/images/mrBD.jpg" class="d-block mx-auto mb-4 thumbnail-img" src="assets/images/mrBD.jpg" alt="Mr Bangladesh"> 
                           </div> <!-- End 12 -->
 
                           <div class="mb-3">
                             <label for="fullName">Your Full Name</label>
-                            <input type="text" class="form-control" name="full_name" placeholder="Your Full Name" placeholder="Your Full Name ... " required>
-                            <div class="invalid-feedback">
-                              Valid name name is required.
-                            </div>
+                            <input type="text" class="form-control" name="full_name" id="full_name" placeholder="Your Full Name" placeholder="Your Full Name ... " required>
+                            
                           </div> <!-- End mb -->
 
                           <div class="mb-3">
-                            <label for="email">Your Email Address</label>
-                            <input type="email" class="form-control" id="email" placeholder="you@gmail.com">
-                            <div class="invalid-feedback">
-                              Please enter a valid email address to get updates.
-                            </div>
+                            <label for="email">Your Email Address</label> 
+                            <input type="email" name="email" class="form-control" id="email" placeholder="you@gmail.com" required>
                           </div> <!-- End mb -->
 
 
                           <div class="mb-3">
-                            <label for="address">Phone Number</label>
-                            <input type="text" class="form-control" id="address" placeholder="017xxxxxxxx" required>
-                            <div class="invalid-feedback">
-                              Please enter your Phone Number.
-                            </div>
+                            <label for="phone">Phone Number</label>
+                            <input type="text" name="phone_number" class="form-control" id="phone_number" placeholder="01xxxxxxxxx" maxlength="11" required>
                           </div> <!-- End mb -->
 
 
                           <div class="row">
                             <div class="col-md-12 mb-3">
                               <label for="district">District</label>
-                              <select class="custom-select d-block w-100" id="district" required>
-                                <option value="">Choose...</option>
-                                <option>Dhaka</option>
-                                <option>Chittagong</option>
-                                <option>Sylhet</option>
-                                <option></option>
-
+                              <select class="custom-select d-block w-100" id="district" name="district" title="Please select your district" required>
+                                <option value="0">Choose...</option>
+                                <option value="Dhaka">Dhaka</option>
+                                <option value="Faridpur">Faridpur</option>
+                                <option value="Gazipur">Gazipur</option>
+                                <option value="Gopalganj">Gopalganj</option>
+                                <option value="Jamalpur">Jamalpur</option>
+                                <option value="Kishoreganj">Kishoreganj</option>
+                                <option value="Madaripur">Madaripur</option>
+                                <option value="Manikganj">Manikganj</option>
+                                <option value="Mymensingh">Mymensingh</option>
+                                <option value="Narayanganj">Narayanganj</option>
+                                <option value="Narsingdi">Narsingdi</option>
+                                <option value="Netrokona">Netrokona</option>
+                                <option value="Rajbari">Rajbari</option>
+                                <option value="Shariatpur">Shariatpur</option>
+                                <option value="Sherpur">Sherpur</option>
+                                <option value=""Tangail>Tangail</option>
+                                <option value="Bogra">Bogra</option>
+                                <option value="Joypurhat">Joypurhat</option>
+                                <option value="Naogaon">Naogaon</option>
+                                <option value="Natore">Natore</option>
+                                <option value="Nawabganj">Nawabganj</option>
+                                <option value="Pabna">Pabna</option>
+                                <option value="Rajshahi">Rajshahi</option>
+                                <option value="Nawabganj">Nawabganj</option>
+                                <option value="Sirajgonj">Sirajgonj</option>
+                                <option value="Dinajpur">Dinajpur</option>
+                                <option value="Gaibandha">Gaibandha</option>
+                                <option value="Kurigram">Kurigram</option>
+                                <option value="Lalmonirhat">Lalmonirhat</option>
+                                <option value="Nilphamari">Nilphamari</option>
+                                <option value="Panchagarh">Panchagarh</option>
+                                <option value="Rangpur">Rangpur</option>
+                                <option value="Thakurgaon">Thakurgaon</option>
+                                <option value="Barguna">Barguna</option>
+                                <option value="Barisal">Barisal</option>
+                                <option value="Bhola">Bhola</option>
+                                <option value="Jhalokati">Jhalokati</option>
+                                <option value="Patuakhali">Patuakhali</option>
+                                <option value="Pirojpur">Pirojpur</option>
+                                <option value="Bandarban">Bandarban</option>
+                                <option value="Brahmanbaria">Brahmanbaria</option>
+                                <option value="Chandpur">Chandpur</option>
+                                <option value="Chittagong">Chittagong</option>
+                                <option value="Comilla">Comilla</option>
+                                <option value="Chittagong">Chittagong</option>
+                                <option value="Cox''s Bazar">Cox''s Bazar</option>
+                                <option value="Feni">Feni</option>
+                                <option value="Khagrachari">Khagrachari</option>
+                                <option value="Lakshmipur">Lakshmipur</option>
+                                <option value="Noakhali">Noakhali</option>
+                                <option value="Rangamati">Rangamati</option>
+                                <option value="Habiganj">Habiganj</option>
+                                <option value="Maulvibazar">Maulvibazar</option>
+                                <option value="Sunamganj">Sunamganj</option>
+                                <option value="Sylhet">Sylhet</option>
+                                <option value="Bagerhat">Bagerhat</option>
+                                <option value="Chuadanga">Chuadanga</option>
+                                <option value="Jessore">Jessore</option>
+                                <option value="Jhenaidah">Jhenaidah</option>
+                                <option value="Khulna">Khulna</option>
+                                <option value="Kushtia">Kushtia</option>
+                                <option value="Magura">Magura</option>
+                                <option value="Meherpur">Meherpur</option>
+                                <option value="Narail">Narail</option>
+                                <option value="Satkhira">Satkhira</option>
                               </select>
-                              <div class="invalid-feedback">
-                                Please select a valid district.
-                              </div>
                             </div>
                           </div> <!-- End row -->
 
 
                           <div class="row">
                             <div class="col-md-12">
-                               <span class="btn btn-primary btn-lg btn-block" type="submit" onclick="startGame()">Start Game</span>
+                               <span class="btn btn-primary btn-lg btn-block" id="startGameBtn">Start Game</span>
                             </div> <!-- End Col  -->
                           </div> <!-- End Row -->
 
@@ -99,7 +148,7 @@
 
                     <div id="questionBlock">  
 
-                           <div class="d-block question-block" id="question0">
+                            <div class="question-block" id="question0">
 
                             <h2 class="question mb-3">
                                     ১) মিস্টার বাংলাদেশ’র নির্মাতা কে? 
@@ -125,7 +174,7 @@
            
 
                           
-                            <div class="d-block question-block" id="question1">
+                            <div class="question-block" id="question1">
 
                               <h2 class="question mb-3">
                                       ২) মূল চরিত্রে খিজির হায়াত খানের এটি কত তম সিনেমা?
@@ -150,7 +199,7 @@
                             </div>  <!-- End d-block my-3 -->
 
 
-                            <div class="d-block question-block" id="question2">
+                            <div class="question-block" id="question2">
 
                               <h2 class="question mb-3">
                                       ৩) কোন সালে লাক্স সুপারস্টারে ভূষিত হন শানেরায় দেবী শানু?
@@ -177,7 +226,7 @@
 
 
 
-                             <div class="d-block question-block" id="question3">
+                             <div class="question-block" id="question3">
 
                               <h2 class="question mb-3">
                                       ৪) শামীম হাসান সরকার অভিনীত দেশের প্রথম ফেসবুকভিত্তিক নাটক কোনটি?
@@ -206,7 +255,7 @@
 
 
 
-                             <div class="d-block question-block" id="question4">
+                             <div class="question-block" id="question4">
 
                               <h2 class="question mb-3">
                                       ৫) সোলাইমান সুখনের প্রথম সিনেমা কোনটি?
@@ -231,7 +280,7 @@
                             </div>  <!-- End d-block my-3 -->
 
 
-                             <div class="d-block question-block" id="question5">
+                             <div class="question-block" id="question5">
 
                               <h2 class="question mb-3">
                                      ৬) মিস্টার বাংলাদেশ’র খল চরিত্রে অভিনয় করেছেন কে? 
@@ -256,7 +305,7 @@
                             </div>  <!-- End d-block my-3 -->
 
 
-                             <div class="d-block question-block" id="question6">
+                             <div class="question-block" id="question6">
 
                               <h2 class="question mb-3">
                                       ৭) মিস্টার বাংলাদেশ’র প্রথম পোস্টারে কোন কবির কবিতা দেখা যায়?
@@ -282,7 +331,7 @@
 
 
 
-                            <div class="d-block question-block" id="question7">
+                            <div class="question-block" id="question7">
 
                               <h2 class="question mb-3">
                                        ৮) বীরশ্রেষ্ঠ মতিউর রহমানকে নিয়ে নির্মিত প্রথম পূর্ণদৈর্ঘ্য চলচ্চিত্র কোনটি?
@@ -309,7 +358,7 @@
 
 
 
-                            <div class="d-block question-block" id="question8">
+                            <div class="question-block" id="question8">
 
                               <h2 class="question mb-3">
                                        ৯) দেশের প্রথম খেলা ভিত্তিক সিনেমা কোনটি?
@@ -334,22 +383,23 @@
                             </div>  <!-- End d-block my-3 -->
 
 
-
-
-
-                            <div class="d-block question-block" id="question9">
+                            <div class="question-block" id="question9">
 
                               <h2 class="question mb-3">
                                       ১০) আপনি ‘মিস্টার বাংলাদেশ’ হলে দেশের কোন সমস্যার সমাধান করতেন? (এক বাক্যে বাংলা/ইংরেজিতে লিখুন)
                               </h2>  
                                 <div class="">
-                                  <input type="text" class="form-control" id="feedback" name="feedback" placeholder="Your feedback ... " required>
+                                  <input type="text" class="form-control" name="feedback" id="feedback" 
+                                 placeholder="Your feedback ... ">
 
                                 </div>
 
                                <div class="row">
                                   <div class="col-md-4 mt-30">
+												              <input type="hidden" name="total_score" id="total_score">
+
                                       <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+                                      
                                   </div>  <!-- End col -->
                                </div> <!-- End row -->
 
@@ -368,9 +418,8 @@
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/bootstrap4/popper.min.js"></script>
     <script src="assets/bootstrap4/bootstrap4.js"></script>
+    <script src="assets/js/jquery.validate.js"></script>
     <script src="assets/js/scripts.js"></script>
-
-   <!--  <script src="assets/js/bootstrap3.min.js"></script> -->
 
   </body>
 </html>
