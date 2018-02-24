@@ -46,7 +46,8 @@
 							  </thead>
 							  <tbody>
 									<?php
-     									 include 'connect.php';
+							
+											include 'connect.php';
      									 	$i = 0;
 											if (mysqli_num_rows($result) > 0 ) 
 											{
@@ -56,15 +57,10 @@
 										 				<tr>
 										 					<td> <?php  echo  $i = $i +1 ?></td>
 										 					<td> <?php  echo $data['Full_Name'] ?></td>
-
 										 					<td> <?php  echo $data['email'] ?></td>
-
 										 					<td> <?php  echo $data['phone_number'] ?></td>
-
 										 					<td> <?php  echo $data['district'] ?></td>
 										 					<td> <?php  echo $data['feedback'] ?></td>
-
-
 															<td> <?php  echo $data['total_score'] ?></td>
 										 				<tr>
 										 				<?php

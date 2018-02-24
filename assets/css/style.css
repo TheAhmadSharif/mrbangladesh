@@ -22,6 +22,9 @@
 .mt-30 {
 	margin-top: 30px;
 }
+.mb-30 {
+	margin-bottom: 30px;
+}
 .question-block {
 	margin-top: 30px;
 	display: none;
@@ -65,4 +68,7 @@
 .result_page {
 	width: 1170px !important;
 	max-width: 1170px !important;
+}
+.thankYou {
+	text-align: center !important;
 }

@@ -78,7 +78,7 @@ $(document).ready(function() {
 						}
 					},
 					messages: {
-						full_name: "Please enter your full name",
+						full_name: "Please enter valid full name",
 						email: "Please enter a valid email address to get updates",
 						phone_number: "Please enter your valid phone number",
 						district: "Please select your district",
